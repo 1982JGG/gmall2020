@@ -4,9 +4,7 @@ import com.jgg.gmall.bean.UmsMember;
 import com.jgg.gmall.service.UmsMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author JGG
@@ -21,5 +19,17 @@ public class UserController {
     public UmsMember getUmsMemberById(@PathVariable("id") Integer id){
 
         return umsMemberService.getUmsMemberById(id);
+    }
+    @PostMapping("user")
+    public int addUmsMember(@RequestBody UmsMember umsMember){
+        return umsMemberService.addUmsMember(umsMember);
+    }
+    @PutMapping("user")
+    public int updateUmsMember(@RequestBody UmsMember umsMember){
+        return umsMemberService.updateUmsMember(umsMember);
+    }
+    @DeleteMapping("user/{id}")
+    public int deleteUmsMemberById(@PathVariable("id") Integer id){
+        return umsMemberService.deleteUmsMemberById(id);
     }
 }

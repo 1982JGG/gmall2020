@@ -18,4 +18,19 @@ public class UmsMemberServiceImpl implements UmsMemberService {
     public UmsMember getUmsMemberById(Integer id) {
         return umsMemberMapper.selectByPrimaryKey(id);
     }
+
+    @Override
+    public int addUmsMember(UmsMember umsMember) {
+        return umsMemberMapper.insert(umsMember);
+    }
+
+    @Override
+    public int updateUmsMember(UmsMember umsMember) {
+        return umsMemberMapper.updateByPrimaryKey(umsMember);
+    }
+
+    @Override
+    public int deleteUmsMemberById(Integer id) {
+        return umsMemberMapper.deleteByPrimaryKey(id);
+    }
 }
