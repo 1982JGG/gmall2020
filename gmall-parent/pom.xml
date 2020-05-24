@@ -15,6 +15,7 @@
     <packaging>pom</packaging>
     <properties>
         <dubbo-starter.version>2.7.3</dubbo-starter.version>
+        <alibaba.spring.context.version>1.0.2</alibaba.spring.context.version>
         <mybatis.starter.version>2.1.2</mybatis.starter.version>
         <tk.mybatis.starter.version>2.1.5</tk.mybatis.starter.version>
         <fastjson.version>1.2.62</fastjson.version>
@@ -39,6 +40,12 @@
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
                 <version>${dubbo-starter.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.alibaba.spring/spring-context-support -->
+            <dependency>
+                <groupId>com.alibaba.spring</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>${alibaba.spring.context.version}</version>
             </dependency>
 
             <dependency>
