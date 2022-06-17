@@ -18,7 +18,7 @@
         <alibaba.spring.context.version>1.0.2</alibaba.spring.context.version>
         <mybatis.starter.version>2.1.2</mybatis.starter.version>
         <tk.mybatis.starter.version>2.1.5</tk.mybatis.starter.version>
-        <fastjson.version>1.2.62</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <zkclient.version>0.11</zkclient.version>
         <nekohtml.version>1.9.22</nekohtml.version>
         <xml-apis.version>2.0.2</xml-apis.version>
